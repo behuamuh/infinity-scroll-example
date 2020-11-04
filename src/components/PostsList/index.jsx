@@ -43,7 +43,7 @@ const PostsList = () => {
     if (loading || !visible || directionY !== 'up') return;
 
     loadMorePosts();
-  }, [loadMorePosts, loading]);
+  }, [loadMorePosts, loading, total]);
 
   useEffect(() => {
     loadMorePosts();
@@ -52,6 +52,13 @@ const PostsList = () => {
 
   return (
     <div className="posts-list">
+      <h2>Пример реализации списка с подгрузкой данных по скроллу</h2>
+      <p>
+        Данные берутся с <a href="http://jsonplaceholder.typicode.com">jsonplaceholder</a>
+      </p>
+      <p>
+        Подгрузка реализована с помощью <a href="https://github.com/behuamuh/react-visibility-detector">компонента</a>
+      </p>
       {posts.map(post => (
         <Post key={post.id} post={post} className="posts-list__item" />
       ))}

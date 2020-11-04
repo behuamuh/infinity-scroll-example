@@ -8,6 +8,10 @@ body {
   color: #dd2c00;
 }
 
+a {
+  color: #dd2c00;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
