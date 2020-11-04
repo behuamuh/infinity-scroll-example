@@ -39,11 +39,10 @@ const PostsList = () => {
   }, [start, posts]);
 
   const handleVisible = useCallback(({ visible, directionY }) => {
-    console.log(visible, directionY, total);
     if (loading || !visible || directionY !== 'up') return;
 
     loadMorePosts();
-  }, [loadMorePosts, loading, total]);
+  }, [loadMorePosts, loading]);
 
   useEffect(() => {
     loadMorePosts();
