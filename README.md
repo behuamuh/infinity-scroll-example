@@ -4,3 +4,4 @@
 
 Подгрузка реализована с помощью [https://github.com/behuamuh/react-visibility-detector](https://github.com/behuamuh/react-visibility-detector)
 
+Посмотреть можно [здесь](https://behuamuh.github.io/infinity-scroll-example/)
