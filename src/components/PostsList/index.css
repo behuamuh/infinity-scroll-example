@@ -1,0 +1,15 @@
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.posts-list__item {
+  margin-bottom: 12px;
+}
+
+.posts-list__anchor {
+  height: 4px;
+  opacity: 0;
+}

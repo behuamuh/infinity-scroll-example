@@ -1,0 +1,15 @@
+.post {
+  border: 1px solid #ffa726;
+  padding: 16px;
+  background-color: #e0e0e0;
+}
+
+.post__title {
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.post__body {
+  font-size: 12px;
+  margin: 0;
+}
