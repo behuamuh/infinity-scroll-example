@@ -58,8 +58,13 @@ const PostsList = () => {
       <p>
         Подгрузка реализована с помощью <a href="https://github.com/behuamuh/react-visibility-detector">компонента</a>
       </p>
-      {posts.map(post => (
-        <Post key={post.id} post={post} className="posts-list__item" />
+      {posts.map((post, i) => (
+        <Post 
+          key={post.id}
+          post={post}
+          animate={i % 4 === 0}
+          className="posts-list__item"
+        />
       ))}
       {loading && '...loading'}
       {total > posts.length && <VisibilityDetector onVisibilityChange={handleVisible} />}

@@ -2,6 +2,17 @@
   border: 1px solid #ffa726;
   padding: 16px;
   background-color: #e0e0e0;
+  transition: all 1s ease-in-out;
+}
+
+.post.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.post.hide {
+  opacity: 0;
+  transform: translateX(400px);
 }
 
 .post__title {
