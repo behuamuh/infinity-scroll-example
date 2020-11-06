@@ -55,7 +55,10 @@ const PostsList = () => {
       <p>
         Data is taken from <a href="http://jsonplaceholder.typicode.com">jsonplaceholder</a>
         <br/>
-        Loading and animation are implemented using <a href="https://github.com/behuamuh/react-visibility-detector">package</a>
+        Loading and animation are implemented using{' '}
+        <a href="https://github.com/behuamuh/react-visibility-detector">
+          react-visibility-detector
+        </a>
         <br/>
         The code is available <a href="https://github.com/behuamuh/infinity-scroll-example">here</a>
       </p>
