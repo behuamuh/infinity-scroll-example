@@ -51,15 +51,16 @@ const PostsList = () => {
 
   return (
     <div className="posts-list">
-      <h2>Пример реализации списка с подгрузкой данных по скроллу</h2>
+      <h2>Example of implementing a list with data loading by scrolling, and animation when blocks appear on the screen</h2>
       <p>
-        Данные берутся с <a href="http://jsonplaceholder.typicode.com">jsonplaceholder</a>
-      </p>
-      <p>
-        Подгрузка реализована с помощью <a href="https://github.com/behuamuh/react-visibility-detector">компонента</a>
+        Data is taken from <a href="http://jsonplaceholder.typicode.com">jsonplaceholder</a>
+        <br/>
+        Loading and animation are implemented using <a href="https://github.com/behuamuh/react-visibility-detector">package</a>
+        <br/>
+        The code is available <a href="https://github.com/behuamuh/infinity-scroll-example">here</a>
       </p>
       {posts.map((post, i) => (
-        <Post 
+        <Post
           key={post.id}
           post={post}
           animate={i % 4 === 0}
